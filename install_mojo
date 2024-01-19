@@ -1,0 +1,7 @@
+#! /bin/bash
+set -eux
+
+curl https://get.modular.com | sh - && \
+modular auth mut_a8a04968a3f247d9b67bde1d37bbd656
+
+modular install mojo
